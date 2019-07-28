@@ -1,0 +1,126 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Create a user",
+        "description": "",
+        "id": "test-the-asynch-flow-of-the-dob;create-a-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23087595795,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Generate accessToken using initsdk api",
+            "match": {
+              "location": "workflowStepDef.generate_accesstoken_using_initsdk_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21024468979,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "create an applicant by entering his demographic values and name as randomUserName1,Anshul Gupta,null,anshul.gupta@idemia.com,Praveen Gupta,M,9971568488,ACCEPTED",
+            "match": {
+              "arguments": [
+                {
+                  "val": "randomUserName1",
+                  "offset": 67
+                },
+                {
+                  "val": "Anshul Gupta",
+                  "offset": 83
+                },
+                {
+                  "val": "null",
+                  "offset": 96
+                },
+                {
+                  "val": "anshul.gupta@idemia.com",
+                  "offset": 101
+                },
+                {
+                  "val": "Praveen Gupta",
+                  "offset": 125
+                },
+                {
+                  "val": "M",
+                  "offset": 139
+                },
+                {
+                  "val": "9971568488",
+                  "offset": 141
+                },
+                {
+                  "val": "ACCEPTED",
+                  "offset": 152
+                }
+              ],
+              "location": "workflowStepDef.create_an_applicant_by_entering_his_demographic_values_and_name_as_(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102149,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify the applicant is saved successfully",
+            "match": {
+              "location": "workflowStepDef.validateUser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@API"
+          },
+          {
+            "line": 5,
+            "name": "@initUser"
+          },
+          {
+            "line": 1,
+            "name": "@FullFlow"
+          }
+        ]
+      }
+    ],
+    "name": "Test the Asynch flow of the DOB",
+    "description": "",
+    "id": "test-the-asynch-flow-of-the-dob",
+    "keyword": "Feature",
+    "uri": "asynch_flow.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@API"
+      },
+      {
+        "line": 1,
+        "name": "@FullFlow"
+      }
+    ]
+  }
+]
