@@ -50,7 +50,7 @@ public void callAadhaarService(String workflowname,String actionType, String doc
 			}
 			else
 			{
-				System.out.println("Recieved wrong response for Aadhaar Service workflow method with errorCode="+response.jsonPath().get("responseHeader.statusCode")+ " and errorMessage as \""+response.jsonPath().get("responseHeader.statusMessage")+"\"");
+				System.out.println("Recieved wrongs response for Aadhaar Service workflow method with errorCode="+response.jsonPath().get("responseHeader.statusCode")+ " and errorMessage as \""+response.jsonPath().get("responseHeader.statusMessage")+"\"");
 				
 			}
 			
